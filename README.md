@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # grokbot-cad-review
 STEP 结构评审的快速几何摘要工具，供 AI 做开模前评审时取证。
 
@@ -13,3 +17,30 @@ STEP 结构评审的快速几何摘要工具，供 AI 做开模前评审时取�
 pip install cadquery
 python scripts/step_summary.py part.step --pull z --min-draft 1.0
 ```
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+面向 STEP 结构评审的轻量几何取证工具，输出实体包围盒、体积、表面积、面数及相对开模方向的拔模粗检，配套 AI 评审流程。
+
+**使用入口：** 安装 `cadquery` 后运行 `python scripts/step_summary.py part.step --pull z --min-draft 1.0`，评审步骤见 `SKILL.md`。
+
+**范围说明：** 粗检不能替代精确壁厚、倒扣分析或实物验证；复杂分析可参考原文列出的上游工具。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A lightweight evidence-gathering tool for STEP reviews, reporting bounding boxes, volume, surface area, face counts, and a coarse draft check relative to the pull direction, with an AI review workflow.
+
+**Getting started:** Install `cadquery`, then run `python scripts/step_summary.py part.step --pull z --min-draft 1.0`. See `SKILL.md` for the review workflow.
+
+**Scope:** Coarse checks do not replace precise wall-thickness or undercut analysis, or physical validation; consult the upstream tools listed in the original README for deeper analysis.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
